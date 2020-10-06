@@ -1,29 +1,8 @@
-import { productsURL } from "./settings/api.js";
-import { createHTML } from "./components/html/createHTML.js";
-import displayMessage from "./components/messages/displayMessage.js";
-
-async function fetchAPI() {
-    try {
-        const response = await fetch(productsURL);
-        const json = await response.json();
-        const product = json;
-
-        console.log(product);
-        createHTML(product);
-        // searchProducts(product);
-
-    } catch (error) {
-        console.log(error);
-        displayMessage("error", error, ".product-container");   
-    }
-}
-
-fetchAPI();
+import displayMessage from "../messages/displayMessage.js";
+import { emptyFilter } from "../messages/displayMessage.js";
 
 
-
-
-/* function createHTML(products) {
+export function createHTML(products) {
     const productContainer = document.querySelector(".product-container");
 
     productContainer.innerHTML = "";
@@ -47,4 +26,4 @@ fetchAPI();
             </div>
         `;
     });
-}  */
+}

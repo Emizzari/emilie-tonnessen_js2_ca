@@ -1,5 +1,5 @@
 import displayMessage from "../messages/displayMessage.js";
-import { emptyFilter } from "../messages/displayMessage.js";
+import { emptyFilter } from "../messages/message.js";
 
 
 export function createHTML(products) {

@@ -19,7 +19,7 @@ export function createHTML(products) {
 
         const doesObjectExist = favourites.find(function (fav) {
             console.log(fav);
-            
+
             return parseInt(fav.id) === product.id;
         });
 

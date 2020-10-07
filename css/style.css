@@ -134,13 +134,17 @@ form input {
 }
 
 
-.heart-icon i {
+.product i {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 30px;
+    top: 30px;
     font-size: 30px;
 }
 
-.heart-icon i.fa {
+.product i.fa {
     color: darkred;
+}
+
+.product i:hover{
+    cursor: pointer;
 }

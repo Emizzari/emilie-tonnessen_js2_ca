@@ -18,6 +18,8 @@ export function createHTML(products) {
         let cssClass = "far";
 
         const doesObjectExist = favourites.find(function (fav) {
+            console.log(fav);
+            
             return parseInt(fav.id) === product.id;
         });
 
@@ -26,17 +28,14 @@ export function createHTML(products) {
         }
 
         productContainer.innerHTML += `
-            <div class="product col">
+            <div class="product col-sm-12 col-md-6 col-lg-3">
                 <img src="http://localhost:1337${product.image.formats.medium.url}" alt="${product.name}" class="product__img">
                 <h4>${product.name}</h4>
                 <p>${product.price} €</p>
                 <p>${product.description} €</p>
-
-                <div>
+                <div class="heart-icon">
                     <i class="${cssClass} fa-heart" data-id="${product.id}" data-name="${product.name}"></i>
                 </div>
-                
-                
             </div>
         `;
     });

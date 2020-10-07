@@ -26,13 +26,15 @@ fetchAPI();
 
 
 // Favourites:
-const favButtons = document.querySelectorAll(".btn i");
+const favButtons = document.querySelectorAll(".heart-icon i");
 
 favButtons.forEach((button) => {
     button.addEventListener("click", handleFavClick);
 });
 
 function handleFavClick() {
+    console.log(event);
+
     this.classList.toggle("fa");
     this.classList.toggle("far");
 

@@ -132,3 +132,15 @@ form input {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+.heart-icon i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+.heart-icon i.fa {
+    color: darkred;
+}

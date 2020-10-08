@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
 a {
@@ -46,8 +46,11 @@ form input {
     padding-right: 1rem;
 }
 
-.menu a.active {
-    color: var(--primary-colour);
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(168, 25, 25);
 }
 
 .container {

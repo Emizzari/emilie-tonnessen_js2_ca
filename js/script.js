@@ -3,8 +3,6 @@ import { createHTML } from "./components/html/createHTML.js";
 import displayMessage from "./components/messages/displayMessage.js";
 import { searchProducts } from "./components/search/searchProducts.js";
 
-
-
 async function fetchAPI() {
     try {
         const response = await fetch(productsURL);
